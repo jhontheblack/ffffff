@@ -20,7 +20,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         button=findViewById(R.id.btnEnviar);
-        botonEvent();
+        try{
+            botonEvent();
+        }catch (Exception ex){
+            Log.i("errorsato",ex.getMessage());
+        }
+
     }
 
 
@@ -38,11 +43,15 @@ public class MainActivity extends AppCompatActivity {
         Log.i("jhon1",grupo.getId()+"");
         Intent intent=new Intent(this, results.class);
         button.setOnClickListener(new View.OnClickListener() {
-//holaaaaaaaaa
+
             @Override
             public void onClick(View view) {
                 Bundle bundle=new Bundle();
                 bundle.putString("nombre",nombre.getText().toString());
+                bundle.putString("pass",pass.getText().toString());
+                bundle.putString("genero","hombre");
+               // bundle.putString("notifica",sw.isChecked()?"hombre":"mujer");
+                intent.putExtras(bundle);
                 startActivity(intent);
                 //Toast.makeText(view.getContext(),nombre.getText()+"Click en el boton",Toast.LENGTH_LONG).show(); //pepa
             }

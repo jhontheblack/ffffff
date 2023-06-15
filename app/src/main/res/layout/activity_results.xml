@@ -95,6 +95,7 @@
             android:textColor="@color/black"></TextView>
 
         <TextView
+            android:id="@+id/notifica"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/black"

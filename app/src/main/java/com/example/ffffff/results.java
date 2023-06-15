@@ -19,8 +19,19 @@ public class results extends AppCompatActivity {
     {
         Bundle bundle = this.getIntent().getExtras();
         String nom=bundle.getString("nombre");
+        String pass=bundle.getString("pass");
+        String genero=bundle.getString("genero");
+      //  String notifica=bundle.getString("notifica");
         TextView tv=findViewById(R.id.nombre);
+        TextView tv2=findViewById(R.id.txtPassword);
+        //TextView tv3=findViewById(R.id.notifica);
         tv.setText(nom);
+        tv2.setText(pass);
+      //  tv3.setText(notifica);
     }
+
+
+
+
 
 }
