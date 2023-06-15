@@ -6,6 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!--Material desingn IO-->
+
+    <TextView
+        android:id="@+id/lblNombre3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="334dp"
+        android:text="fecha nac
+" />
+
+    <TextView
+        android:id="@+id/lblNombre2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="250dp"
+        android:text="Genero
+" />
+
     <TextView
         android:id="@+id/lblContra"
         android:layout_width="wrap_content"
@@ -17,7 +43,7 @@
         android:text="Password" />
 
     <EditText
-        android:id="@+id/txtNome2"
+        android:id="@+id/txtNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -53,10 +79,10 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="18dp"
         android:layout_marginTop="65dp"
-        android:text="fddffdfd" />
+        android:text="Nombre" />
 
     <EditText
-        android:id="@+id/txtNome"
+        android:id="@+id/txtPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -68,13 +94,77 @@
         android:inputType="numberPassword"
         android:text="Name" />
 
+
     <Button
         android:id="@+id/btnEnviar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="222dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="169dp"
+        android:layout_marginTop="667dp"
+        android:layout_marginEnd="154dp"
+        android:layout_marginBottom="16dp"
         android:text="Enviar" />
+
+    <RadioGroup
+        android:id="@+id/grupo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="201dp"
+        android:padding="10dp">
+
+        <RadioButton
+            android:id="@+id/mujer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Femenino"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/hombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hombre"></RadioButton>
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/swNotificaciones"
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="235dp"
+        android:layout_marginBottom="483dp"
+        android:text="Notificaciones"></Switch>
+
+    <EditText
+        android:id="@+id/fechaNac"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="112dp"
+        android:layout_marginBottom="366dp"
+        android:inputType="date"
+        android:text="holi"></EditText>
+
+    <CalendarView
+        android:id="@+id/fecha"
+        android:layout_width="321dp"
+        android:layout_height="290dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="69dp"></CalendarView>
+
+
 </RelativeLayout>
