@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         Log.i("jhon1",grupo.getId()+"");
         Intent intent=new Intent(this, results.class);
         button.setOnClickListener(new View.OnClickListener() {
-
+//holaaaaaaaaa
             @Override
             public void onClick(View view) {
                 Bundle bundle=new Bundle();
