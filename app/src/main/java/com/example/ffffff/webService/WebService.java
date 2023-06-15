@@ -5,7 +5,6 @@ import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
 
-import com.example.ffffff.webService.HttpRequest.HttpRequestException;
 
 import org.json.JSONException;
 
@@ -78,7 +77,7 @@ public class WebService extends AsyncTask<String, Long, String> {
 
             return r;
 
-        } catch (HttpRequestException exception) {
+        } catch (HttpRequest.HttpRequestException exception) {
             Log.e("doInBackground", exception.getMessage());
 
             return "Error HttpRequestException";

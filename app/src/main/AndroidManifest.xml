@@ -16,8 +16,14 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".consumeAct.LoginService"
-            android:exported="true" >
+            android:name="bankList"
+            android:exported="false" />
+        <activity
+            android:name=".consumeAct.saludoApi"
+            android:exported="false" />
+        <activity
+            android:name=".usersAutorization.usersActivityLogin"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,13 +31,14 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".consumeAct.LoginService"
+            android:exported="false" />
+        <activity
             android:name=".results"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false">
-
-        </activity>
+            android:exported="false" />
     </application>
 
 </manifest>
